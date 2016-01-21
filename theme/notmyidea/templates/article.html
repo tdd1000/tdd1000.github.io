@@ -30,8 +30,7 @@
       </script>
       <noscript>Please enable JavaScript to view the comments.</noscript>
     </div>
-    {% endif %}
-    {% if DUOSHUO_SITENAME and SITEURL and article.status != "draft" %}
+{% if DUOSHUO_SITENAME and SITEURL and article.status != "draft" %}
   <div class="comments">
     <h2>Comments !</h2>
     <!-- Duoshuo Comment BEGIN -->
@@ -50,7 +49,8 @@
   </script>
   <noscript>Please enable JavaScript to view the comments.</noscript>
 <!-- Duoshuo Comment END -->
-</endif>
+    {% endif %}
+
   </article>
 </section>
 {% endblock %}
